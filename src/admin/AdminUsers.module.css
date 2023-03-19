@@ -1,0 +1,38 @@
+.add{
+    background-image: url("./img/add.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.delete{
+    background-image: url("./img/delete.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 80px;
+}
+.modify{
+    background-image: url("./img/modify.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: -120px;
+}
+.home{
+    background-image: url("./img/home.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}

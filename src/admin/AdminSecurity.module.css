@@ -1,0 +1,16 @@
+.background{
+    position: absolute;
+    background-image: url("./img/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.logo{
+    background-image: url("./img/logo1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    margin-left: 100px;
+}

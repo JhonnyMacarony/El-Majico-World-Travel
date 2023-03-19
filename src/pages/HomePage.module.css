@@ -1,0 +1,111 @@
+.logo{
+    background-image: url("./img/logo1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+.search{
+    background-image: url("./img/search.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45px;
+    width: 45px;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+}
+  
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+  
+.content {
+    display: grid;
+    grid-template-rows: 1fr 800px 700px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.language{
+    background-image: url("./img/usa-flag.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65px;
+    width: 65px;
+    border: 1px solid white;
+    box-shadow: rgba(43, 43, 43, 0.301) 2px 2px;
+    border-radius: 50%;
+}
+.language:hover{
+    cursor: pointer;
+}
+.laugh{
+    background-image: url("./img/laugh.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -5;
+}
+.goforit:hover{
+    background-color: rgba(83, 150, 250, 0.356);
+}
+.arrow{
+    background-image: url("./img/arrow.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 70px;
+}
+.buy:hover{
+    background-color: rgba(97, 250, 83, 0.356);
+}
+
+                                                                                                            /* Mobile exception */
+@media only screen and (max-width: 600px) {
+    .video {
+        width: 375vw;
+        height: 150vh;
+        object-fit: cover;
+        position: absolute;
+    }    
+    .give{
+        margin-right: -380px;
+    }
+    .mod1{
+        margin-left: -70px;
+    }
+    .mod2{
+        width: 375vw;
+    }
+    .mod3{
+        width: 375vw;
+        margin-top: 30px;
+    }
+    .mod4{
+        margin-top: 300px;
+    }
+    .mod5{
+        margin-top: 250px;
+    }
+    .searchmod{
+        margin-left: -300px;
+    }
+    .bordermod{
+        width: 300vw;
+    }
+    .widthmod{
+        width: 440vw;
+    }
+    .heightmod{
+        width: 60vw;
+        height: 150vh;
+    }
+}
