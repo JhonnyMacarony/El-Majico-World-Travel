@@ -8,7 +8,7 @@ import ImageLoadDialog from "./ImageLoadDialog"
 import { useNavigate, useParams  } from "react-router-dom";
 
 const AdminUsersForm = () => {
-    const [fileLoaded, setFileLoaded] = useState(false)
+    const [,setFileLoaded] = useState(false)
     const [open, setOpen] = useState(false)
     const [image, setImage] = useState("")
 
@@ -27,8 +27,8 @@ const AdminUsersForm = () => {
     const [close, setClose] = useState(true)
     const [checkCode, setCheckCode] = useState('')
 
-    const [ dataLoaded, setDataLoaded ] = useState(false)
-    const [ users, setUsers ] = useState([])
+    const [ dataLoaded ] = useState(false)
+    const [ ,setUsers ] = useState([])
     const [ mustCreate, setMustCreate ] = useState(false)
     const [ currentUser, setCurrentUser ] = useState({email: "", name:"", phone:"", image:"", code:""})
     const navigate = useNavigate();
@@ -134,7 +134,7 @@ const AdminUsersForm = () => {
       const {name, email, phone, code} = e.target.elements
       const data = {
         name: name.value,
-        code: name.code,
+        code: code.value,
         phone: phone.value,
         email: email.value,
         image,    

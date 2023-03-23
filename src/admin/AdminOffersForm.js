@@ -8,7 +8,7 @@ import ImageLoadDialog from "./ImageLoadDialog"
 import { useNavigate, useParams  } from "react-router-dom";
 
 const AdminOffersForm = () => {
-    const [fileLoaded, setFileLoaded] = useState(false)
+    const [,setFileLoaded] = useState(false)
     const [open, setOpen] = useState(false)
     const [image, setImage] = useState("")
     const [close, setClose] = useState(true)
@@ -36,8 +36,8 @@ const AdminOffersForm = () => {
     const [ cpriceError, setCpriceError ] = useState("")
     const [ cpriceHasError, setCpriceHasError ] = useState(false)
 
-    const [ dataLoaded, setDataLoaded ] = useState(false)
-    const [ offers, setOffers ] = useState([])
+    const [ dataLoaded ] = useState(false)
+    const [ ,setOffers ] = useState([])
     const [ mustCreate, setMustCreate ] = useState(false)
     const [ currentOffer, setCurrentOffer ] = useState({name: "",  description:"", destinations:"", duration:"", rating:"", price:"", image:"", cprice:""})
     const navigate = useNavigate();

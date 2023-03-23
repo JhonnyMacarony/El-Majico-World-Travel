@@ -8,7 +8,7 @@ import ImageLoadDialog from "./ImageLoadDialog"
 import { useNavigate, useParams  } from "react-router-dom";
 
 const AdminDestinationsForm = () => {
-  const [fileLoaded, setFileLoaded] = useState(false)
+  const [,setFileLoaded] = useState(false)
   const [open, setOpen] = useState(false)
   const [image, setImage] = useState("")
   const [close, setClose] = useState(true)
@@ -50,15 +50,15 @@ const AdminDestinationsForm = () => {
     const [ priceError, setPriceError ] = useState("")
     const [ priceHasError, setPriceHasError ] = useState(false)
 
-    const [ cpriceError, setCpriceError ] = useState("")
+    const [ ,setCpriceError ] = useState("")
     const [ cpriceHasError, setCpriceHasError ] = useState(false)
 
     const [ ytidError, setYtidError ] = useState("")
     const [ ytidHasError, setYtidHasError ] = useState(false)
 
 
-    const [ dataLoaded, setDataLoaded ] = useState(false)
-    const [ destinations, setDestinations ] = useState([])
+    const [ dataLoaded ] = useState(false)
+    const [ ,setDestinations ] = useState([])
     const [ mustCreate, setMustCreate ] = useState(false)
     const [ currentDestination, setCurrentDestination ] = useState({name: "", ytid:"", include:"", include2:"", include3:"", include4:"", exclude:"", exclude2:"", description:"", country:"", duration:"", rating:"", price:"", cprice:"", image:""})
     const navigate = useNavigate();

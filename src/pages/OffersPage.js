@@ -15,7 +15,7 @@ const OffersPage = ()=>{
         setPageData(prevData=>({...prevData, ...response.data}))
         } 
         offerRequest()
-    },[])
+    },[params.id])
     
     useEffect(()=>{
         console.log(offer)

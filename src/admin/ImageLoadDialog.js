@@ -35,7 +35,6 @@ function ImageLoadDialog({open, onClose, image, onPath, ratio}){
       formData.append("fileName", fileName)
       formData.append("folder", "ionut")
       formData.append("httpLink", "http://localhost:4000/external-images")
-      const formProps = Object.fromEntries(formData)
       let data =  await fetch("http://localhost:4000/upload-service/api/images/upload", {
         method: "POST",
         body: formData
@@ -95,7 +94,7 @@ function ImageLoadDialog({open, onClose, image, onPath, ratio}){
           />
             </div>
             <div>
-                <img style={{width:"250px", height:"auto"}} src={cropData}></img> 
+                <img alt='93846' style={{width:"250px", height:"auto"}} src={cropData}></img> 
               </div>
           </div>
         </DialogContent>
