@@ -7,7 +7,7 @@ import classes from "./Components.module.css"
 const EndBar = () => {
   return (
     <Box className={classes.mod2} sx={{display:"grid", gridTemplateColumns:"1fr 1fr 1fr 1fr"}}>
-        <a href="#" style={{display:"grid", gridTemplateColumns:"1fr 1fr", marginRight:"150px", marginLeft:"50px"}}>
+        <a href="ht" style={{display:"grid", gridTemplateColumns:"1fr 1fr", marginRight:"150px", marginLeft:"50px"}}>
             <div className={classes.insta} />
             <p className={classes.linkmod} style={{ textDecoration:"underline white", color:"black", marginLeft:"-50px"}}>El_Majico_World_Travel</p>
         </a>

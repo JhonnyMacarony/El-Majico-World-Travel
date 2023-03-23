@@ -29,7 +29,7 @@ const PurchaseMailPageOffer = () => {
     const [ open, setOpen ] = useState(false)
     const [ final, setFinal ] = useState(false)
 
-    const [data, setData] = useState({})
+    const [ setData] = useState({})
 
     const handleMail = async(e)=>{
     e.preventDefault()
@@ -71,7 +71,7 @@ const PurchaseMailPageOffer = () => {
                 <Link to={"/hot-offers"}> <div className={classes.arrow} /> </Link>
             </Box>
             <Box sx={{display:"grid", gridTemplateColumns:"1fr 1fr", color:"white", marginTop:"-50px", height:"91.5vh", width:"700px", marginLeft:"500px", backgroundColor:"rgba(151, 151, 151, 0.656)", padding:"40px"}}>
-            <img src={offer.image} style={{position:"absolute", zIndex:"-1", height:"100vh", width:"780px", marginTop:"-40px", marginLeft:"-40px"}} />
+            <img alt='img123' src={offer.image} style={{position:"absolute", zIndex:"-1", height:"100vh", width:"780px", marginTop:"-40px", marginLeft:"-40px"}} />
                 <Box sx={{fontSize:"30px", width:"400px", marginLeft:"100px", marginTop:"130px"}}>
                     <p style={{position:"absolute", marginTop:"-80px", fontSize:"46px", marginLeft:"140px"}}>Your order</p>
                     <p style={{fontWeight:"bold"}}>Offer Name :</p>

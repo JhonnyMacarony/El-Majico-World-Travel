@@ -15,7 +15,7 @@ const HomePage = () => {
   return (
     <div className={classes.main}>
         <div className={classes.content}>
-          <img className={classes.video} src={vid1} /> 
+          <img alt='img6547' className={classes.video} src={vid1} /> 
             <Box sx={{ display:"flex", textShadow:"rgba(43, 43, 43, 0.301) 2px 2px", flexDirection:"row", fontSize:"29px", alignItems:"center", justifyContent:"space-around", padding:"20px 15px", position:"relative" }}>
               <Link style={{textDecoration: 'none', color:"white"}} to={"/"}> Homepage </Link>
               <Link style={{textDecoration: 'none', color:"white"}} to={"/hot-offers"}> Hot Offers </Link>

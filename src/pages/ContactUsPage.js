@@ -1,14 +1,13 @@
 import { Box, Button, TextField } from '@mui/material'
 import React from 'react'
 import { useState } from 'react'
-import Navbar from '../components/Navbar'
 import axios from 'axios';
 import classes from "./HomePage.module.css"
 import HomeLink from '../components/HomeLink';
 import { Link } from 'react-router-dom';
 
 const ContactUsPage = () => {
-  const [data, setData] = useState({})
+  const [ setData] = useState({})
 
   const handleMail = async(e)=>{
     e.preventDefault()
@@ -53,7 +52,7 @@ const ContactUsPage = () => {
                 <Button type='submit' variant="contained">Send it</Button> 
               </Box>
           </Box>
-          <Box sx={{padding:"20px", marginLeft:"50px", backgroundColor:"rgba(0, 0, 0, 0.962)", color:"white", width:"800px", borderRadius:"4px 150px 4px 150px", padding:"60px"}}>
+          <Box sx={{ marginLeft:"50px", backgroundColor:"rgba(0, 0, 0, 0.962)", color:"white", width:"800px", borderRadius:"4px 150px 4px 150px", padding:"80px"}}>
             <h1 style={{ fontWeight:"normal", fontSize:"40px"}}>Other ways:</h1>
             <Box>
               <p>Phone Number: +0753 807 109</p>
